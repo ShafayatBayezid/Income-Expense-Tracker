@@ -1,66 +1,57 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## Creating an Income Expense Tracker
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+You are tasked with developing an Income Expense Tracker web application using Laravel to help users manage their finances effectively. The application will allow users to track their income and expenses, view financial summaries, and perform basic financial calculations. The assignment involves implementing various Laravel concepts, including database migrations, Eloquent ORM, form validation, and data manipulation.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<strong align="center">Requirements:</strong><br>
+<strong>1. Database Setup:</strong>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-Create a new database and configure the database connection in the .env file.
+-Design and implement the necessary database tables for the application. You need at least two tables, one for income records and one for expense records. Include relevant fields such as amount, description, date, and category.
 
-## Learning Laravel
+<strong>2. Models and Relationships:</strong>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-Create two models: Income and Expense, representing the income and expense records, respectively.
+-Define the relationships between the Income and Expense models and the user model. Each income and expense record should belong to a specific user.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<strong>3. User Authentication:</strong>
+-Implement user registration and login functionalities using Laravel's built-in authentication system.
+-Restrict access to the income and expense tracking features to authenticated users only.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+<strong>4. Income and Expense Creation:</strong>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+-Provide a form for users to add new income and expense records.
+-Implement server-side validation to ensure the amount, description, and date fields are required and correctly formatted.
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+<strong>5. Displaying Records:</strong>
+-Create separate views to display the list of income and expense records for the logged-in user.
+-Implement pagination to display a limited number of records per page.
 
-## Contributing
+<strong>5. Displaying Records:</strong>
+-Create separate views to display the list of income and expense records for the logged-in user.
+-Implement pagination to display a limited number of records per page.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+<strong>6. Financial Calculations:</strong>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+-Calculate and display the total income and total expenses for the user.
+-Calculate and display the net income (income - expenses) for the user.
 
-## Security Vulnerabilities
+<strong>7. Filtering and Sorting:</strong>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+-Allow users to filter income and expense records based on categories or date ranges.
+-Provide options for sorting records by date or amount in ascending or descending order.
 
-## License
+<strong>8. Data Manipulation:</strong>
+-Implement the ability to edit and delete income and expense records.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<strong>9. Styling and User Experience:</strong>
+-Apply CSS styling to ensure a user-friendly and visually appealing interface.
+-Make the application responsive to different screen sizes.
+
+
+ 
